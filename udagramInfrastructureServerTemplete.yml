@@ -231,8 +231,8 @@ Resources:
                     -   s3:Get*
                     -   s3:List*
                     Resource: 
-                    -   arn:aws:s3:::udagram
-                    -   arn:aws:s3:::udagram/*
+                    -   arn:aws:s3:::udacity-demo-111
+                    -   arn:aws:s3:::udacity-demo-111/*
             Roles:
             -   Ref: S3ReadOnlyEC2
 
@@ -291,7 +291,8 @@ Resources:
                     apt-get install apache2 -y
                     systemctl start apache2.service
                     cd /var/www/html
-                    aws s3 cp s3://udagram/index.html .
+                    aws s3 cp s3://udacity-demo-111/udacity.zip .
+                    unzip -o udacity.zip
                     
             ImageId: !Ref AMI 
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
