@@ -24,3 +24,11 @@ $ ./create.sh stackName network_infrastructure.yml infrastructure_parameters.jso
 
 ### Output of Project
 ![Website-of-the-project](/Deployment%20screenshots/15.%20website%20LB-EC2-s3%20connectivity%20check.png)
+
+#### Link for the live application 
+
+kindly, use this link to verify that it's working
+
+```
+http://proje-webap-dxcfyjiec3xv-483523388.us-east-1.elb.amazonaws.com/
+```
